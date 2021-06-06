@@ -1,0 +1,9 @@
+[streams]
+count = 1
+
+[directory]
+root = "./"
+
+[templates]
+"<%COLOR%>" = "BLACK"
+"CIRCLE" = "CIRCLE"

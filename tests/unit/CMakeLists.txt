@@ -4,7 +4,7 @@ set(DeepTextReplace_TESTS_NAME ${DeepTextReplace_NAME}_unit)
 
 set(DeepTextReplace_TEST_SRC
     ${PROJECT_SOURCE_DIR}/tests/unit/Settings_test.cpp
-    ${PROJECT_SOURCE_DIR}/tests/unit/ParsedFiles_test.cpp
+    ${PROJECT_SOURCE_DIR}/tests/unit/EditFiles_test.cpp
 )
 
 set(DeepTextReplace_GMOCK_DIR ${CMAKE_SOURCE_DIR}/3rd-party/googletest/googlemock)

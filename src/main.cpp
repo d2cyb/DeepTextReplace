@@ -1,7 +1,7 @@
 #include <iostream>
 #include <filesystem>
 #include "DeepTextReplace/Settings.hpp"
-#include "DeepTextReplace/ParsedFiles.hpp"
+#include "DeepTextReplace/EditFiles.hpp"
 
 auto main([[maybe_unused]] int argc, [[maybe_unused]] char* argv[]) -> int {
     std::filesystem::path configFilePath =

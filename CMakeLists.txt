@@ -28,7 +28,7 @@ find_package(Threads REQUIRED)
 
 set(DeepTextReplace_INC
     ${PROJECT_SOURCE_DIR}/include/${PROJECT_NAME}/Settings.hpp
-    ${PROJECT_SOURCE_DIR}/include/${PROJECT_NAME}/ParsedFiles.hpp
+    ${PROJECT_SOURCE_DIR}/include/${PROJECT_NAME}/EditFiles.hpp
     ${PROJECT_SOURCE_DIR}/include/${PROJECT_NAME}/Semaphore.hpp
 )
 source_group(include FILES ${DeepTextReplace_INC})
@@ -36,7 +36,7 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 
 set(DeepTextReplace_SRC
     ${PROJECT_SOURCE_DIR}/src/Settings.cpp
-    ${PROJECT_SOURCE_DIR}/src/ParsedFiles.cpp
+    ${PROJECT_SOURCE_DIR}/src/EditFiles.cpp
 )
 
 source_group(src FILES ${DeepTextReplace_SRC})

@@ -1,4 +1,4 @@
-#include "DeepTextReplace/ParsedFiles.hpp"
+#include "DeepTextReplace/EditFiles.hpp"
 
 namespace dtr {
 using std::string;

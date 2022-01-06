@@ -7,7 +7,7 @@ auto replaceByTemplates(const string &line, const std::shared_ptr<std::map<std::
     -> string {
     string tmpString = line;
     for (auto it = templates->cbegin(); it != templates->end(); ++it) {
-        tmpString = regex_replace(line, std::regex{it->first}, it->second);
+        tmpString = regex_replace(tmpString, std::regex{it->first}, it->second);
     }
 
     return tmpString;
@@ -23,7 +23,9 @@ void editFileByTemplates(const string &&filePath, const std::shared_ptr<std::map
         line = replaceByTemplates(line, patterns);
         outFileStream << line << '\n';
     }
-
+    outFileStream.close();
+    searchFileStream.close();
+    
     std::filesystem::remove(filePath);
     std::filesystem::rename(outputFilePath, filePath);
 }
